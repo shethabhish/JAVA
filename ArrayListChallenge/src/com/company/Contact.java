@@ -1,7 +1,6 @@
 package com.company;
 
 public class Contact {
-
     private String name;
     private String number;
 
@@ -16,5 +15,9 @@ public class Contact {
 
     public String getNumber() {
         return number;
+    }
+
+    public static Contact create(String name, String number) {
+        return new Contact(name,number);
     }
 }
